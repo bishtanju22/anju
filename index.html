@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hemlo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cf38279d59.js"  crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="phone.css">  
+</head>
+
+<style>
+    body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    color: rgba(83, 73, 73, 0.504);
+}
+
+
+#main {
+    background-color: #ff496107;
+    position: relative;
+    /* height: 80vh; */
+}
+
+.icons {
+    text-align: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#head { 
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+}
+
+.first span {
+    margin-left: 30px;
+    margin-top: 2px;
+    color: rgb(56, 54, 54); 
+    font-weight: 600;
+}
+
+.link:hover {
+    color: #FF4961;
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 1.5rem; 
+    color: rgb(23, 23, 94); 
+    font-weight: bold;
+}
+#logo i{ 
+    font-size: 15px; 
+    color: #FF4961;
+}
+
+#head button {
+    width: 85px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF4961;
+    color: white;
+    font-weight: 700;
+}
+
+
+#head button:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.container h5 {
+    color: #FF4961;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.container .image {
+    /* position: absolute;  */
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+    right: 20px;
+    top: 100px;
+    float: right;
+}
+
+.container .item {
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgb(162, 159, 159);
+    width: fit-content;
+    margin: auto;
+    margin-top: 45px;
+    background-color: white;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.item input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(213, 210, 210);
+    border-radius: 8px;
+}
+
+.item button {
+    padding: .9em;
+    border-radius: .5rem;
+    width: 110px;
+    border: none;
+    background-color: #FF4961;
+}
+
+.icons {
+    text-align: center;
+
+}
+
+.icons img {
+    margin: 1.8rem;
+    width: 100px;
+
+}
+
+/* work section */
+
+#work-process {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#work {
+    margin-top: 50px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(248, 252, 252);
+    margin-bottom: 45px;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 2px 2px 10px rgb(191, 185, 185);
+    padding: 23px;
+    width: 10%;
+    margin-left: 25px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.18);
+}
+
+.card i {
+    padding: 4px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.back {
+    background-color: #FF4961;
+    border: none;
+}
+
+/* categories */
+
+#category {
+    background-color: #ff496115;
+    text-align: center;
+    padding-top: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.cate {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cate1 {
+    text-align: left;
+    border: 2px solid white;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 11px;
+    margin-left: 6%; 
+    width: 155px; 
+    height: 150px;
+} 
+
+.cate1 i {
+    font-size: 1.8rem;
+}
+
+.cate1:hover {
+    transform: scale(1.18);
+}
+
+.cate1 i{ 
+    color: #FF4961;
+    padding: 10px; 
+    box-shadow: 2px 2px 10px rgba(200, 193, 193, 0.43); 
+    border-radius: 7px; 
+    color: rgb(78, 64, 100);;
+}
+ 
+.cate1 p{
+ 
+    color: rgba(83, 73, 73, 0.741);
+}
+
+
+/* join section */
+
+#join {
+   /* margin-top: 0px; */
+    display: flex;
+    justify-content: center; 
+    width: 65%; 
+    margin: auto;
+}
+
+#join img {
+    height: 190px;
+    margin-top: 35px;
+}
+
+.cont {
+    margin: 20px;
+}
+
+.cont button {
+    color: #FF4961;
+    background-color: white;
+    border: none; 
+    font-weight: 600;
+} 
+.cont button:hover{
+    background-color: #FF4961; 
+    color: white; 
+    padding: 8px;
+}
+
+/* testimonials */
+
+#testimonials { 
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#testimonials p{
+    color: rgba(83, 73, 73, 0.741);
+}
+.red {
+    background-color: rgba(239, 143, 143, 0.557);
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: left;
+
+}
+
+.green {
+    background-color: rgba(159, 218, 159, 0.726);
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: left;
+}
+
+.blue {
+    background-color: rgba(176, 176, 216, 0.773);
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: left;
+}
+
+.yellow {
+    background-color: rgba(232, 232, 181, 0.812);
+    width: 200px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: left;
+}
+
+.testi {
+    width: 80%;
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+    margin: auto;
+} 
+.test1 i{
+    color: rgb(245, 191, 14);
+}
+
+.test1 { 
+   
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgb(213, 209, 209);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.test1 img {
+    height: 50px;
+}
+
+
+
+
+
+
+/* subsribe */
+#subscribe {
+    text-align: center;
+    margin: auto
+}
+
+#subscribe h2 {
+    margin-bottom: -10px; 
+    font-size: 2rem;
+}
+
+#subscribe h4 {
+    margin-bottom: 40px;
+}
+
+.subs {
+    display: inline;
+    padding: 29px;
+    box-shadow: 2px 2px 10px rgba(196, 194, 194, 0.267);
+    border-radius: 20px;
+}
+
+.subs input {
+    border: 2px solid rgb(234, 232, 232);
+    width: 32%;
+    padding: 6px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.subs button {
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 8px;
+    background-color: #FF4961;
+    color: white;
+}
+
+.subs button:hover {
+    background-color: white;
+    color: #FF4961;
+}
+
+
+.pp {
+    color: rgb(56, 54, 54);
+
+}
+
+
+
+/* footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) ; 
+    width: 80%; 
+    margin: auto;
+}
+
+#foot {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: -35px; 
+
+}
+
+.foots {
+    width: 20%;
+    margin: 49px 29px;
+}
+ 
+.foot1 h3{
+    margin-top: 20px;
+} 
+ #pp {
+    margin-top: 39px;
+} 
+#links{
+    margin-top: -10px;
+}
+.foot1 i{
+    font-size: 10px;
+}
+#foot h3 {
+    font-size: 1.5rem;
+    margin-bottom: -8px;
+}
+
+.foots p {
+    font-size: 0.9rem;
+    line-height: 15px; 
+    margin-top: 15px;
+
+}
+
+.foots p a img {
+    height: 45px;
+    width: 45px;
+    margin-right: 12px;
+}
+
+.fa {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.fa:hover {
+    transform: scale(1.1);
+}
+
+.reser {
+    text-align: center;
+    background-color: #FF4961;
+    padding: 20px;
+} 
+
+@media screen and (max-width:900px) { 
+    
+/* main section */ 
+
+.first span {
+    margin-left: 5px;
+    margin-top: 2px;
+    color: rgb(56, 54, 54); 
+    font-weight: 600;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+.container .image {
+    width: 150px;
+    height: 150px;
+} 
+.item input {
+    padding: 8px; 
+    width: 25%; 
+    margin-right: 6px;
+    border: 2px solid rgb(213, 210, 210);
+    border-radius: 8px; 
+    font-size: .7rem;
+}
+
+.item button {
+    padding: .8em;
+    border-radius: .5rem;
+    width: 25%; 
+    border: none;
+    background-color: #FF4961; 
+    font-size: .7rem;
+}
+
+
+/* join section */
+#join {
+    /* margin-top: 0px; */
+     display: flex;
+     justify-content: center; 
+     width: 100%;  
+     flex-wrap: wrap;
+ }
+
+
+
+
+/* footer */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) ; 
+    width: 100%; 
+    margin: auto;
+}
+
+#foot {
+    height: 270px; 
+}
+
+#foot h4 {
+    font-size: 0.8rem;
+}
+
+#foot p {
+    font-size: .5rem; 
+    line-height: 7px;
+}
+#pp {
+    margin-top: 28px;
+}
+#foot h3 {
+    font-size: 1rem;
+    margin-bottom: -8px;
+}
+.foot1 {
+    margin-left: 34px;
+
+}
+.foots {
+    width: 20%;
+    margin: 49px 29px;
+}
+
+.foots p a img {
+    height: 21px;
+    width: 26px;
+}
+
+.reser {
+    font-size: .5rem;
+}
+
+.foots {
+    margin: 33px 10px;
+}
+
+#foot h4 {
+    font-size: .7rem;
+}
+
+.fa {
+    font-size: 13px;
+
+}
+    
+}
+</style>
+<body>
+
+    <section id="main">
+        <header id="head">
+            <div class="first">
+                <span id="logo">
+                    <i class="fa-solid fa-headphones"></i>BESNIK
+                </span>
+                <span class="link"> HOME</span>
+                <span class="link"> Career Tips</span>
+                <span class="link">Jobs</span>
+            </div>
+            <button>Sign in</button>
+        </header>
+        <div class="container">
+            <img class="image"
+                src="https://cdn.thedailymash.co.uk/wp-content/uploads/20190324204920/watching-movie-on-phone-667x375.jpg"
+                alt="">
+            <div class="up">
+                <h5>Your dream Job</h5>
+                <h2>Find Your job better <br> and faster</h2>
+                <h4>Find Your job better and faster with <br> Besnik</h4>
+                <div class="item">
+                    <input type="text" placeholder="Product manager">
+                    <input type="text" placeholder="Product manager">
+                    <button>Search Job</button>
+                </div>
+            </div>
+        </div> 
+        <div class="icons"> 
+          <img src="amazon-logo.png" alt=""> 
+          <img src="Asics_logo.png" alt="">
+          <img src="dc6387e0a83a27c5bcf0e2c0bd3c7cb8.png" alt="">
+          <img src="harris-2-logo-png-transparent.png" alt="">
+          <img src="Disney-logo.webp" alt="">
+
+        </div>
+    </section>
+    
+<section id="work-process">
+    <div>
+        <h2>Our Work Process</h2> 
+        <h4>Follow the instruction & Apply for your dream job</h4>
+    </div>
+</section>
+    <section id="work"> 
+        <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <p>Create Account</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-file"></i>
+            <p>Make CV</p>
+        </div>
+        <div class="card">
+            <i class="fa-regular fa-magnifying-glass"></i>
+            <p>Search Job</p>
+        </div>
+        <div class="card back">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <p class="">Apply</p>
+        </div>
+    </section>
+
+    <section id="category">
+        <h2>Browse Jobs By Category</h2>
+        <h4>Choose from the list of most popular category</h4>
+        <div class="cate">
+            <div class="cate1">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Product <br>Management</h3>
+                <p>100+ open position</p>
+            </div>
+            <div class="cate1">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Designs / <br> Creatives</h3>
+                <p>100+ open position</p>
+            </div>
+            <div class="cate1">
+                <i class="fa-sharp fa-solid fa-desktop"></i>
+                <h3>Education / <br> Training</h3>
+                <p>100+ open position</p>
+            </div>
+        </div>
+        <div class="cate">
+            <div class="cate1">
+                <i class="fa-sharp fa-solid fa-desktop"></i>
+                <h3>UI/UX <br> designer</h3>
+                <p>100+ open position</p>
+            </div>
+            <div class="cate1">
+                <i class="fa-sharp fa-solid fa-desktop"></i>
+                <h3>Development</h3>
+                <p>100+ open position</p>
+            </div>
+            <div class="cate1 back">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Customer <br> Support</h3>
+                <p>100+ open position</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="join">
+        <img src="https://muzawed.com/wp-content/uploads/2020/10/The-advantages-of-social-Media-Websites.jpg" alt="">
+        <div class="cont">
+            <h2>Over 2,000+ top companies join with us</h2>
+            <p>Take automation to the next level by connectiong to your exixting tools, keep your bools up to date or
+                save receipts in ypur favourite storage tool.</p>
+            <button>Eplore More -></button>
+        </div>
+
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+       <p> Choose from the list of most popular categories </p>
+
+        <div class="testi">
+            <div class="red">
+                <div class="test1">
+                    <img src="https://yt3.ggpht.com/a/AATXAJyAEuD-HGcrBDFwLUMRqrFC1F7oaw4-7ccsbA=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+    
+                    <h3>Jhon Smith</h3> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i>
+                    <p>See why leading and ButcherBox choose Churn Buster</p>
+                </div>  
+            </div> 
+            <div class="green">
+                <div class="test1">
+                    <img src="https://yt3.ggpht.com/a/AATXAJyAEuD-HGcrBDFwLUMRqrFC1F7oaw4-7ccsbA=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+    
+                    <h3>Jhon Smith</h3> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i>
+                    <p>See why leading and ButcherBox choose Churn Buster</p>
+                </div>  
+            </div> 
+            <div class="blue">
+                <div class="test1">
+                    <img src="https://yt3.ggpht.com/a/AATXAJyAEuD-HGcrBDFwLUMRqrFC1F7oaw4-7ccsbA=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+    
+                    <h3>Jhon Smith</h3> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i>
+                    <p>See why leading and ButcherBox choose Churn Buster</p>
+                </div>  
+            </div> 
+            <div class="yellow">
+                <div class="test1">
+                    <img src="https://yt3.ggpht.com/a/AATXAJyAEuD-HGcrBDFwLUMRqrFC1F7oaw4-7ccsbA=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+    
+                    <h3>Jhon Smith</h3> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i>
+                    <p>See why leading and ButcherBox choose Churn Buster</p>
+                </div>  
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Subscribe</h2>
+        <h4>Get weekly top new job notifications</h4>
+        <div class="subs">
+            <input type="email" placeholder="Type Your Email">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div id="foot">
+            <div class="foots foot1">
+               <h3> <i class="fa-solid fa-headphones "></i> Besnik </h3> <br>
+                <p  id="pp">Automate your entire healthcare hiring, onboarding and compliance with a true technology platform
+                </p> <br>
+                <p id="links">
+                    <a href="https://ww.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+
+                    <a href="https://ww.instagram.com" target="_blank">
+                        <i class="fa fa-instagram"></i></a>
+
+                    <a href="https://ww.twitter.com" target="_blank">
+                        <i class="fa fa-twitter"></i></a>
+                </p>
+            </div>
+            <div class="foots">
+                <h4>CATEGORIES</h4> <br>
+                <p>
+                    Product Management <br><br>
+                    Designs / Creatives<br><br>
+                    Eductaion & Training <br><br>
+                    UI/UX Designers <br><br>
+                    Development<br><br>
+                    Customer Support <br><br>
+                </p>
+
+            </div>
+            <div class="foots">
+                <h4>ABOUT</h4> <br>
+                <p>
+                    About Us <br> <br>
+                    Partnerships <br> <br>
+                    Finance Experts<br> <br>
+                    Product Management  <br> <br>
+                    Product Manager <br> <br>
+                    VOLT <br> <br>
+                    The team <br> <br>
+                    Engineering Blog <br> <br>
+                </p>
+
+            </div>
+            <div class="foots foots1">
+                <h4>Follow Us</h4> <br>
+                <p>
+                    Facebook <br> <br>
+                    Twitter <br> <br>
+                    Instagram <br> <br>
+                    Linkedin<br> <br>
+            </div>
+
+        </div> 
+    </footer>
+        
+        <div class="reser">
+          Copyright &copy; 2021 all rights reserved Besnik
+        </div>
+
+
+</body>
+
+</html>
